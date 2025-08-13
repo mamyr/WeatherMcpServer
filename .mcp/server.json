@@ -1,0 +1,33 @@
+{
+  "$schema": "https://github.com/mamyr/WeatherMcpServer/.mcp/server.json",
+  "description": "WeatherMcpServer",
+  "name": "io.github.mamyr",
+  "packages": [
+    {
+      "registry_name": "nuget",
+      "name": "WeatherMcpServer",
+      "version": "0.1.0-beta",
+      "package_arguments": [],
+      "environment_variables": [
+        {
+          "name": "WEATHER_CHOICES",
+          "value": "{sunny,humid,freezing}",
+          "variables": {
+            "weather_choices": {
+              "description": "The weather is, Here it is, Today's weather is",
+              "is_required": true,
+              "is_secret": false
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "repository": {
+    "url": "https://github.com/mamyr/WeatherMcpServer",
+    "source": "github"
+  },
+  "version_detail": {
+    "version": "0.1.0-beta"
+  }
+}
